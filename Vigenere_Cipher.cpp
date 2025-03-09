@@ -119,16 +119,6 @@ vector<char> deciphering(string cipass, string key){
 }
 
 int main(){
-    //Encrypted
-    vector<string> user = user_pass();
-    vector<char> vigen = ciphering(user[0], user[1]);
-    for(int i = 0; i < vigen.size();i++){
-        if(i != 0 && i % 5 == 0){
-            cout << " ";
-        }
-        cout << vigen[i];
-    }
-    //Decrypted
     vector<string> user = user_cipher();
     vector<char> vigen = deciphering(user[0], user[1]);
     for(int i = 0; i < vigen.size();i++){
